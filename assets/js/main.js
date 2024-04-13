@@ -176,3 +176,11 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+function sendMessage(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+    
+    // Display the alert message
+    alert("Message has been sent!");
+}
